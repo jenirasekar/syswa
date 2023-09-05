@@ -1,13 +1,13 @@
 @extends('layouts')
 
 @section('header')
-<h3>Data Siswa</h3>
+<h3 style="text-align: center;">Data Siswa</h3>
 @endsection
 
 @section('content')
-<table class="table table-bordered table-striped table-primary" id="siswa">
+<table class="table table-bordered" id="siswa">
     <thead>
-        <tr>
+        <tr class="table table-primary">
             <th>No</th>
             <th>NIS</th>
             <th>Nama</th>
@@ -32,7 +32,7 @@
                 dataSrc: ''
             },
             columns: [{
-                    // data: 'id_siswa'
+                    data: 'id_siswa'
                 },
                 {
                     data: 'nis'
@@ -42,6 +42,9 @@
                 },
                 {
                     data: 'jenis_kelamin'
+                },
+                {
+                    data: 'no_telp'
                 },
                 {
                     data: 'alamat'
@@ -54,15 +57,14 @@
                 },
                 {
                     
-                }
+                },  
             ],
             select: true,
-            pagingType: 'full_numbers',
-            dom: 'Bfrtip',
+            dom: 'Bfrti',
             columnDefs: [{
                 targets: -1,
                 data: null,
-                // defaultContent: "<button class='btn btn-primary'>Click!</button>",
+                defaultContent: "<button class='btn btn-primary'>Klik</button>",
             }],
         });
     });

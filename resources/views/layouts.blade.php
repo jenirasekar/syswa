@@ -22,6 +22,17 @@
     <!-- Bootstrap untuk DataTables -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js">
+
+    <style>
+        .dataTables_filter {
+            margin-bottom: 30px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        h3 {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 
 <body>
